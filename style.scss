@@ -1,0 +1,124 @@
+// sass style.scss style.css --watch
+
+@import './scss/bases/base';
+
+@import './scss/layouts/header';
+@import './scss/components/intro';
+@import './scss/components/logo';
+@import './scss/components/wedo';
+@import './scss/components/card';
+@import './scss/components/cta';
+@import './scss/components/read';
+@import './scss/components/event';
+@import './scss/components/footer';
+
+.home {
+  &__banner {
+    position: relative;
+  }
+
+  &__banner-content {
+    position: absolute;
+    top: 182px;
+    left: 110px;
+  }
+
+  &__banner-heading {
+    @include homeHeading;
+
+    width: 640px;
+  }
+  &__banner-img {
+    width: 100%;
+  }
+  &__banner-btn {
+    @include dFlex(start, $gap: 16px);
+
+    margin-top: 48px;
+    &--do {
+      @include primaryButton($white, $black);
+    }
+    &--play {
+      @include primaryButton(transparent);
+    }
+  }
+  &__banner-footer {
+    @include dFlex($gap: 24px);
+    margin-top: 192px;
+    color: $white;
+
+    &--line {
+      width: 861px;
+      height: 1px;
+      background-color: $white;
+    }
+  }
+  &__chart {
+    @include dFlex;
+    background-color: $black;
+    padding: 96px 0;
+  }
+  &__chart-content {
+    &--heading {
+      width: 611px;
+      @include heading2($white);
+      padding-top: 16px;
+    }
+
+    &--para {
+      padding-bottom: 32px;
+      width: 616px;
+      color: $white;
+      opacity: 0.6;
+    }
+    &--tree {
+      @include dFlex;
+    }
+    &--green {
+      width: 16px;
+      height: 16px;
+      border-radius: 4px;
+      margin-right: 8px;
+      background-color: $greenSecondary;
+    }
+    &--purple {
+      width: 16px;
+      height: 16px;
+      border-radius: 4px;
+      margin-right: 8px;
+      background-color: $purple;
+    }
+    &--beige {
+      width: 16px;
+      height: 16px;
+      border-radius: 4px;
+      margin-right: 8px;
+      background-color: $beige;
+    }
+    &--yellow {
+      width: 16px;
+      height: 16px;
+      border-radius: 4px;
+      margin-right: 8px;
+      background-color: $yellow;
+    }
+    &--pink {
+      width: 16px;
+      height: 16px;
+      border-radius: 4px;
+      margin-right: 8px;
+      background-color: $pink;
+    }
+  }
+  &__chart-content-comment {
+    @include dFlex($align: start);
+  }
+  &__chart-content--record {
+    @include dFlex(start, $gap: 24px);
+    width: 572px;
+    flex-wrap: wrap;
+    p {
+      color: $white;
+    }
+  }
+}

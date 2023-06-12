@@ -1,0 +1,32 @@
+.read {
+  &__content {
+    padding: 40px 0;
+  }
+  &__content-section {
+    @include dFlex(start, $gap: 24px);
+    padding-bottom: 48px;
+
+    p {
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+    &--line {
+      width: 80%;
+      height: 2px;
+      background-color: $border;
+    }
+  }
+  &__content-card {
+    @include dFlex;
+  }
+  &__content-card--blog {
+    width: 290px;
+    p {
+      color: $secondaryText;
+    }
+  }
+  &__content-card--title {
+    font-weight: 600;
+    padding: 8px 0;
+  }
+}

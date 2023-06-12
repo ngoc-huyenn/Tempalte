@@ -1,0 +1,20 @@
+.logo {
+  &__content-section {
+    @include dFlex($gap: 24px);
+
+    p {
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+
+    &--line {
+      width: 1094px;
+      height: 1px;
+      background-color: $border;
+    }
+  }
+  &__content__icon {
+    @include dFlex;
+    padding: 32px;
+  }
+}

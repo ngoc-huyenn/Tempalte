@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button,
+input,
+textarea {
+  background-color: transparent;
+  border: 0;
+  outline: none;
+}
+
+.container {
+  width: 1500px;
+  padding: 0 110px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0;
+  height: 67px;
+}
+.header__menu {
+  flex-grow: 1;
+  text-align: end;
+}
+.header__menu a {
+  color: #525560;
+  font-weight: 500;
+  padding: 20px;
+}
+.header__menu a:hover {
+  color: #0b0706;
+}
+.header__btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  padding: 16px 32px;
+  height: 43px;
+  gap: 10px;
+  border-radius: 4px;
+  background-color: #1d2130;
+  color: #ffffff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.header__btn:hover {
+  background-color: rgba(29, 33, 48, 0.8);
+}
+
+.header {
+  width: 100%;
+  background-color: #eff7f2;
+}
+
+.dona__content {
+  padding: 96px 0;
+}
+.dona__content-section {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 24px;
+  padding-bottom: 32px;
+}
+.dona__content-section--line {
+  width: 70px;
+  height: 2px;
+  background-color: #0b0706;
+}
+.dona__content-section--title {
+  font-weight: 600;
+  color: #0b0706;
+}
+
+/*# sourceMappingURL=style.css.map */

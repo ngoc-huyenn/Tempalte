@@ -1,0 +1,61 @@
+.wedo {
+  @include dFlex($align: start);
+  background-color: $greenTertiary;
+  width: 100%;
+  padding: 96px;
+
+  &__content-section {
+    @include dFlex(start, $gap: 24px);
+    padding-bottom: 32px;
+    &--line {
+      width: 70px;
+      height: 2px;
+      background-color: $black;
+    }
+    p {
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+  }
+  &__content-title {
+    padding: 0 100px;
+    p {
+      color: $secondaryText;
+    }
+  }
+  &__content--heading {
+    @include heading2;
+    padding-bottom: 16px;
+  }
+  &__content-text {
+    padding-bottom: 32px;
+  }
+  &__content-list {
+    @include dFlex($gap: 24px);
+    border-left: 2px solid $border;
+    padding-left: 24px;
+  }
+  &__contenr-list--funcitons {
+    @include dFlexCol($gap: 24px);
+  }
+  &__content-list--citis {
+    @include dFlex($align: start, $gap: 24px);
+
+    img {
+      background-color: $greenPrimary;
+      padding: 6px 7px;
+      border-radius: 4px;
+    }
+  }
+  &__content-list--heading {
+    font-weight: 700;
+    padding-bottom: 8px;
+  }
+  &__img--animal {
+    padding-bottom: 69px;
+    img {
+      width: 480px;
+      height: 600px;
+    }
+  }
+}

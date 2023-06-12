@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button,
+input,
+textarea {
+  background-color: transparent;
+  border: 0;
+  outline: none;
+}
+
+.container {
+  width: 1500px;
+  padding: 0 110px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0;
+  height: 67px;
+  position: fixed;
+  z-index: 99999999999;
+  background-color: transparent;
+  width: 100%;
+}
+.header__menu {
+  flex-grow: 1;
+  text-align: end;
+}
+.header__menu a {
+  color: #525560;
+  font-weight: 500;
+  padding: 20px;
+}
+.header__menu a:hover {
+  color: #0b0706;
+}
+.header__btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  padding: 16px 32px;
+  height: 43px;
+  gap: 10px;
+  border-radius: 4px;
+  background-color: #1d2130;
+  color: #ffffff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.header__btn:hover {
+  background-color: rgba(29, 33, 48, 0.8);
+}
+
+.dona {
+  padding-top: 96px;
+}
+.dona__content {
+  background-color: #eff7f2;
+}
+.dona__content-section {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 24px;
+  padding-bottom: 32px;
+}
+.dona__content-section--line {
+  width: 70px;
+  height: 2px;
+  background-color: #0b0706;
+}
+.dona__content-section--title {
+  font-weight: 600;
+  color: #0b0706;
+}
+.dona__content-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0;
+}
+.dona__content-text--title {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 120%;
+  color: #1d2130;
+  width: 627px;
+  padding-top: 14px;
+}
+.dona__content-text p {
+  width: 517px;
+  color: #525560;
+}
+.dona__content-text--btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  padding: 16px 32px;
+  height: 51px;
+  gap: 10px;
+  border-radius: 4px;
+  background-color: #70c174;
+  color: #ffffff;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 32px;
+}
+.dona__content-text--btn:hover {
+  background-color: rgba(112, 193, 116, 0.8);
+}
+.dona__howto-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 96px;
+  padding: 96px 0;
+}
+.dona__howto-content-text--heading {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 120%;
+  color: #1d2130;
+  width: 592px;
+  padding-bottom: 24px;
+}
+.dona__howto-content-text p {
+  color: #525560;
+  width: 592px;
+}
+.dona__howto-content-tabs--row-title {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 0;
+  padding-bottom: 8px;
+}
+.dona__howto-content-tabs--row-title p {
+  color: #525560;
+  width: 20%;
+  text-align: center;
+}
+.dona__howto-content-tabs--line {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 0;
+  padding-bottom: 24px;
+}
+.dona__howto-content-tabs--lineone {
+  width: 114px;
+  height: 2px;
+  background-color: #70c174;
+}
+.dona__howto-content-tabs--linetwo {
+  width: 256px;
+  height: 2px;
+  background-color: #e5e5e5;
+}
+.dona__howto-content-tabs-col p {
+  color: #525560;
+  padding: 20px 0;
+}
+.dona__usege-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 96px;
+}
+.dona__usege-content--heading {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 120%;
+  color: #1d2130;
+  width: 374px;
+}
+.dona__usege-content--para {
+  width: 374px;
+}
+.dona__usege-content--title {
+  width: 374px;
+}
+
+/*# sourceMappingURL=style.css.map */

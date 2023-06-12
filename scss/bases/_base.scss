@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+@import '../variables/colors';
+@import '../mixin/typo';
+@import '../mixin/button';
+@import '../mixin/display';
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+button,
+input,
+textarea {
+  background-color: transparent;
+  border: 0;
+  outline: none;
+}
+
+.container {
+  width: 1500px;
+  padding: 0 110px;
+}

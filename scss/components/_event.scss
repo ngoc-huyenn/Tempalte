@@ -1,0 +1,66 @@
+.event {
+  &__content {
+    padding: 40px 0;
+  }
+  &__content-section {
+    @include dFlex(start, $gap: 24px);
+    padding: 50px 0;
+    p {
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+    &--line {
+      width: 1062px;
+      height: 2px;
+      background-color: $border;
+    }
+  }
+  &__content-card {
+    @include dFlex(start, $gap: 24px);
+    &--title {
+      @include dFlex(start, $gap: 24px);
+      width: 628px;
+      height: 181px;
+      background-color: $greenSecondary;
+      border-radius: 8px;
+    }
+    &--date {
+      padding-left: 40px;
+    }
+    &--day {
+      font-weight: 600;
+      font-size: 48px;
+    }
+    &--month {
+      font-weight: 500;
+    }
+    &--header {
+      @include dFlex(start, $gap: 23px);
+    }
+    &--next {
+      font-weight: 500;
+    }
+    &--line {
+      width: 44px;
+      height: 2px;
+      background-color: $black;
+    }
+    &--icon {
+      @include dFlex($gap: 24px);
+      padding-top: 8px;
+      p {
+        width: 381px;
+        height: 84px;
+        font-size: 28px;
+        font-weight: 700;
+      }
+      i {
+        @include dFlex(center);
+        width: 56px;
+        height: 56px;
+        background-color: $white;
+        border-radius: 999px;
+      }
+    }
+  }
+}

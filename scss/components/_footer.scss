@@ -1,0 +1,54 @@
+.footer {
+  &__content {
+    @include dFlex(start, start);
+    width: 100%;
+    background-color: $black;
+    padding: 96px 110px;
+    img {
+      padding-right: 117px;
+    }
+  }
+
+  &__content-item {
+    @include dFlex($align: start, $gap: 96px);
+  }
+  &--title {
+    height: 210px;
+  }
+  &__content-item--p {
+    color: $white;
+    font-weight: 700;
+  }
+  &__content-item--para {
+    color: $white;
+    opacity: 0.78;
+    padding: 12px 0;
+    width: 84px;
+  }
+  &__content-btn {
+    padding-left: 147px;
+  }
+  &__content-btn--in {
+    @include dFlex(center);
+    margin-top: 32px;
+    input {
+      border: 1px solid rgba(235, 240, 249, 0.3);
+      width: 400px;
+      height: 64px;
+      padding-left: 24px;
+      color: $white;
+      border-top-left-radius: 8px;
+      border-bottom-left-radius: 8px;
+    }
+    button {
+      @include primaryButton($white, $black, 64px);
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+  }
+  &__content-heading {
+    font-weight: 700px;
+    color: $white;
+    font-size: 40px;
+  }
+}

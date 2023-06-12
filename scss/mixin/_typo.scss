@@ -1,0 +1,67 @@
+@mixin homeHeading($color: $white) {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 120%;
+  color: $color;
+}
+
+@mixin heading1($color: $primaryText) {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 120%;
+  color: $color;
+}
+
+@mixin heading2($color: $primaryText) {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 120%;
+  color: $color;
+}
+
+@mixin heading3($color: $primaryText) {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 150%;
+  color: $color;
+}
+
+@mixin heading4($color: $primaryText) {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 150%;
+  color: $color;
+}
+
+@mixin heading5($color: $primaryText) {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 150%;
+  color: $color;
+}
+
+@mixin heading6($color: $primaryText) {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 150%;
+  color: $color;
+}
+@mixin heading6($color: $primaryText) {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 150%;
+  color: $color;
+}
+@mixin paragraph($color: $secondaryText) {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: $color;
+}
+@mixin paragraphSmall($color: $secondaryText) {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 160%;
+  color: $color;
+}

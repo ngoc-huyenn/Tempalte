@@ -1,0 +1,27 @@
+@mixin primaryButton($bgColor: $greenPrimary, $color: $white, $height: 51px) {
+  @include dFlex;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  padding: 16px 32px;
+  height: $height;
+  gap: 10px;
+  border-radius: 4px;
+  background-color: $bgColor;
+  color: $color;
+  cursor: pointer;
+  transition: 0.3s;
+
+  &:hover {
+    background-color: rgba($bgColor, 0.8);
+  }
+
+  @if $bgColor == transparent {
+    &:hover {
+      background-color: rgba($white, 0.3);
+    }
+  }
+}

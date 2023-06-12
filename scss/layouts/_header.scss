@@ -1,0 +1,26 @@
+.header {
+  @include dFlex;
+  height: 67px;
+  position: fixed;
+  z-index: 99999999999;
+  background-color: transparent;
+  width: 100%;
+  &__menu {
+    flex-grow: 1;
+    text-align: end;
+
+    a {
+      color: $secondaryText;
+      font-weight: 500;
+      padding: 20px;
+
+      &:hover {
+        color: $black;
+      }
+    }
+  }
+
+  &__btn {
+    @include primaryButton($primaryText, $height: 43px);
+  }
+}

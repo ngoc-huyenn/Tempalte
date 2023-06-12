@@ -1,0 +1,109 @@
+// sass ./pages/donate/style.scss ./pages/donate/style.css --watch
+
+@import './../../scss/bases/base';
+
+@import './../../scss/layouts/header';
+
+// DONATE
+.dona {
+  padding-top: 96px;
+  &__content {
+    background-color: $greenTertiary;
+  }
+  &__content-section {
+    @include dFlex(start, $gap: 24px);
+    padding-bottom: 32px;
+    &--line {
+      width: 70px;
+      height: 2px;
+      background-color: $black;
+    }
+    &--title {
+      font-weight: 600;
+      color: $black;
+    }
+  }
+  &__content-text {
+    @include dFlex();
+    &--title {
+      @include heading1;
+      width: 627px;
+      padding-top: 14px;
+    }
+    p {
+      width: 517px;
+      color: $secondaryText;
+    }
+    &--btn {
+      @include primaryButton;
+      margin-top: 32px;
+    }
+  }
+
+  // TABS
+  &__howto-content {
+    @include dFlex($gap: 96px);
+    padding: 96px 0;
+  }
+
+  &__howto-content-text {
+    &--heading {
+      @include heading2;
+      width: 592px;
+      padding-bottom: 24px;
+    }
+    p {
+      color: $secondaryText;
+      width: 592px;
+    }
+  }
+  &__howto-content-tabs--row-title {
+    width: 100%;
+    @include dFlex(start);
+    padding-bottom: 8px;
+
+    p {
+      color: $secondaryText;
+      width: 20%;
+      text-align: center;
+    }
+  }
+
+  &__howto-content-tabs--line {
+    @include dFlex(start);
+    padding-bottom: 24px;
+  }
+  &__howto-content-tabs--lineone {
+    width: 114px;
+    height: 2px;
+    background-color: $greenPrimary;
+  }
+  &__howto-content-tabs--linetwo {
+    width: 256px;
+    height: 2px;
+    background-color: $border;
+  }
+  &__howto-content-tabs-col {
+    p {
+      color: $secondaryText;
+      padding: 20px 0;
+    }
+  }
+  // USEGE
+  &__usege-content {
+    @include dFlex($gap: 96px);
+
+    &--heading {
+      @include heading2();
+      width: 374px;
+    }
+
+    &--para {
+      width: 374px;
+    }
+
+    &--title {
+      width: 374px;
+    }
+  }
+}
