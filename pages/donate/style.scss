@@ -3,12 +3,16 @@
 @import './../../scss/bases/base';
 
 @import './../../scss/layouts/header';
+@import './../../scss/components/cta';
+@import './../../scss/layouts/footer';
 
 // DONATE
 .dona {
-  padding-top: 96px;
   &__content {
+    padding-top: 96px;
+    padding-bottom: 96px;
     background-color: $greenTertiary;
+    width: 100%;
   }
   &__content-section {
     @include dFlex(start, $gap: 24px);
@@ -92,6 +96,7 @@
   // USEGE
   &__usege-content {
     @include dFlex($gap: 96px);
+    padding-bottom: 96px;
 
     &--heading {
       @include heading2();

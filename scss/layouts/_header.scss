@@ -1,8 +1,11 @@
 .header {
   @include dFlex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9;
   height: 67px;
-  position: fixed;
-  z-index: 99999999999;
   background-color: transparent;
   width: 100%;
   &__menu {
